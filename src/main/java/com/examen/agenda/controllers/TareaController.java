@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/tareas")
+@RestController
+@RequestMapping("/tareas")
 public class TareaController {
     @Autowired
     private TareaService tareaService;
